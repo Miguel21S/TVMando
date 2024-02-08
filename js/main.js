@@ -90,14 +90,19 @@ ligaApaga.addEventListener("click", ligadoApagado);
 // MÉTODO QUE PERMITE CAMBIAR DE CANALES USANDO BOTONES
 // function changeVolume(direction) {
 //   if (tvLidago) {
-//     if (direction === "up" && currentVolume < 100) {
+//     if (direction === "up" || currentVolume < 100) {
 //       currentVolume += 10;
-//     } else if (direction === "down" && currentVolume > 0) {
+//       console.log("Volume+:", currentVolume);
+//     } else if (direction === "down" || currentVolume > 0) {
 //       currentVolume -= 10;
+//       console.log("Volume-:", currentVolume);
 //     }
-//     console.log("Volume:", currentVolume);
+    
 //   }
 // }
+
+// ch1.addEventListener("click", () => canalCh("cima"));
+// ch2.addEventListener("click", () => canalCh("bajo"));
 // ligaApaga.addEventListener("click", ligadoApagado);
 
 // // // // // // // // // ligaApaga.addEventListener("click", () => {
