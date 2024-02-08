@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="screen" class="basicScreen">
+            <header>
+                <div class="grid-container">
+                    <div id="canal" class="item1"> </div>
+                    <div id="hora" class="item2"> </div>
+                    <div id="data" class="item3"> </div>
+                </div>
+            </header>
+            <img id="myImagen">
+        </div>
+        <div id="remote">
+            <!-- <div id="c1" class="button">1</div>
+            <div id="c2" class="button">2</div>
+            <div id="c3" class="button">3</div>
+            <div id="c4" class="button">4</div> -->
+
+            <div class="flex-container">
+
+                <div class="hijo_1">
+                    <!-- <div class="flex-container_1"> -->
+                    <div class="hijo_1_container_1">
+                        <div><button type="button" id="liga" class="btnOnOf">On</button></div>
+                        <div><button type="button" id="src" class="btnMute">Mute</button></div>
+
+                    </div>
+                    <!--  </div> -->
+                </div>
+
+                <div class="hijo_2">
+                    <div class="flex-container_2">
+                        <div class="grid-container">
+                            <div clase="grid-item"> <button type="button" id="volM1" class="btnV">+</button>
+                                <div class="volChan">Vol</div>
+                            </div>
+                            <div></div>
+                            <div class="grid-item"> <button type="button" id="ch1" class="btnCh">+</button>
+                                <div class="volChan">Ch</div>
+                            </div>
+                            <div class="grid-item"> <button type="button" id="volM2" class="btnV">-</button></div>
+                            <div></div>
+                            <div class="grid-item"> <button type="button" id="ch2" class="btnCh">-</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hijo_3">
+                    <div class="flex-container_3">
+                        <div class="grid-container">
+                            <!-- <div class="grid-item"> <button type="button" id="on-off" class="btn">on/off</button> </div> -->
+                            <div class="grid-item"> <button type="button" id="tv_1" class="btn">1</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_2" class="btn">2</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_3" class="btn">3</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_4" class="btn">4</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_5" class="btn">5</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_6" class="btn">6</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_7" class="btn">7</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_8" class="btn">8</button> </div>
+                            <div class="grid-item"> <button type="button" id="tv_9" class="btn">9</button> </div>
+                            <!-- <div class="grid-item"> <button type="button" id="cero" class="btn">0</button> </div> -->
+                            <!-- <div class="grid-item"> <button type="button" id="menu" class="btn">Menu</button> </div> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- <div id="tronco"></div> -->
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
