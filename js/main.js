@@ -2,8 +2,10 @@
 // DECLARACION DE VARIABLES
 const buttons = document.getElementsByClassName("btn");
 const volumen = document.getElementsByClassName("btnV");
+
 let ch1 = document.getElementById("ch1");
 let ch2 = document.getElementById("ch2");
+
 let ligaApaga = document.getElementById("liga");
 let imagen = document.getElementById("myImagen");
 
@@ -15,8 +17,6 @@ let anoMes = document.getElementById("data");
 
 // const tv = ["tv_", "tv_", "tv_", "tv_", "tv_", "tv_", "tv_", "tv_", "tv_"];
 
-// MÉTODO QUE PERMITE CAMBIAR DE CANALES USANDO NÚMEROS
-
 let subirBajarvolume = 0;
 let currentChannel = 0;
 let aux = 0;
@@ -27,7 +27,9 @@ let arrayVolumen = Array.from(volumen)
 
 let hora = new Date();
 
-arrayButtons.map(
+// MÉTODO QUE PERMITE CAMBIAR DE CANALES USANDO NÚMEROS
+
+arrayButtons.forEach(
   item => {
     item.addEventListener("click", (evento) => {
       //screen.classList.remove(screen.classList[screen.classList.length - 1])
@@ -38,10 +40,11 @@ arrayButtons.map(
           
   
           imagen.src = "img/" + evento.target.id + ".jpg";
-          // aux = evento.target.id.slice(-1);
+          aux = evento.target.id.slice(-1);
           // aux1 = aux - 1;
           // aux = tv[aux - 1] + "" + aux;
           // console.log(evento.target.id.substring(0, 3));
+          console.log(aux);
           infCanal.innerHTML = "TV "+ evento.target.id.slice(-1);
         }
       }
@@ -118,7 +121,7 @@ ligaApaga.addEventListener("click", ligadoApagado);
 // // MÉTODO CAHHEL
 // let currentChannel = 0;
 // function canalCh(direction) {
-//     if (direction === "cima") {
+//     if (aux === tv_[]) {
 
 //     currentChannel = (currentChannel % 9) + 1;
 
